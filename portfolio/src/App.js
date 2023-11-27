@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+//import './public/profile_img.jpg'
+const user = {
+  name: 'Shaunak Wagh',
+  image_src: './profile_img.jpg',
+  imageSize: 90,
+};
+
+ function Profile() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.image_src}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
   );
 }
-
-export default App;
+export default Profile;
