@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.6f7084a1.css",
-    "main.js": "/static/js/main.dc0d50da.js",
+    "main.js": "/static/js/main.af292b0d.js",
     "static/js/787.a2594e5a.chunk.js": "/static/js/787.a2594e5a.chunk.js",
     "static/media/Shaunak_Wagh_Resume.pdf": "/static/media/Shaunak_Wagh_Resume.63f3fabfaf9312ee9398.pdf",
     "index.html": "/index.html",
     "main.6f7084a1.css.map": "/static/css/main.6f7084a1.css.map",
-    "main.dc0d50da.js.map": "/static/js/main.dc0d50da.js.map",
+    "main.af292b0d.js.map": "/static/js/main.af292b0d.js.map",
     "787.a2594e5a.chunk.js.map": "/static/js/787.a2594e5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f7084a1.css",
-    "static/js/main.dc0d50da.js"
+    "static/js/main.af292b0d.js"
   ]
 }
