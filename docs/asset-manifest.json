@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8cd2a26b.css",
+    "main.js": "/static/js/main.12b3fe7d.js",
+    "static/js/453.8db1f7f5.chunk.js": "/static/js/453.8db1f7f5.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/Shaunak_Wagh_Resume.pdf": "/static/media/Shaunak_Wagh_Resume.922c9dce1e758e3f1180.pdf",
+    "index.html": "/index.html",
+    "main.8cd2a26b.css.map": "/static/css/main.8cd2a26b.css.map",
+    "main.12b3fe7d.js.map": "/static/js/main.12b3fe7d.js.map",
+    "453.8db1f7f5.chunk.js.map": "/static/js/453.8db1f7f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cd2a26b.css",
+    "static/js/main.12b3fe7d.js"
+  ]
+}
