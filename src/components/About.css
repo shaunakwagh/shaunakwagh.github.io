@@ -1,0 +1,9 @@
+/* About.css */
+
+/* Import the custom font from Google Fonts (replace 'YourFont' with the desired font name) */
+@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
+
+/* Apply the custom font to the elements with the 'custom-font' class */
+.custom-font {
+  font-family: 'YourFont', sans-serif;
+}

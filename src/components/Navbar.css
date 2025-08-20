@@ -1,0 +1,24 @@
+/* Add smooth scrolling to all anchor links */
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover effect for desktop nav links */
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link:hover span {
+  width: 100% !important;
+}
+
+/* Mobile menu link hover effect */
+.d-md-none .nav-link:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Transition effects */
+.transition-all {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,472 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+  /* Font family */
+  --font-primary: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  
+  /* Heading sizes */
+  --heading-xl: 2rem/1.563;
+  --heading-lg: 1.75rem/1.071;
+  --heading-md: 1.375rem/1.182;
+  
+  /* Body sizes */
+  --body-xl: 1.125rem/1.167;
+  --body-lg: 1rem/1.188;
+  --body-md: 0.875rem/1.143;
+  --body-sm: 0.75rem/1.167;
+  
+  /* OLED display sizes */
+  --oled-lg: 1rem/1.125;
+  --oled-sm: 0.5rem/1.125;
+
+  /* Brand Colors (Core interactive elements) */
+  --brand-light: #F4D9BD;
+  --brand-medium: #B68E65;
+  --brand-dark: #654D35;
+  
+  /* Process Colors (Ongoing operations) */
+  --process-light: #CFCBFE;
+  --process-medium: #6C6C6C;
+  --process-dark: #6C6C66;
+  
+  /* Success Colors (Positive states) */
+  --success-light: #84FFCC;
+  --success-medium: #5FC676;
+  --success-dark: #357242;
+  
+  /* Warning Colors (Caution) */
+  --warning-light: #C6C6C6;
+  --warning-medium: #F0A83D;
+  --warning-dark: #70470A;
+  
+  /* Alert Colors (Errors) */
+  --alert-light: #FFC2C2;
+  --alert-medium: #DE0000;
+  --alert-dark: #590E0E;
+  
+  /* Neutrals (Backgrounds/Text) */
+  --neutral-xlight: #F6F6F6;
+  --neutral-light: #BCBCBC;
+  --neutral-medium: #6C6C6C;
+  --neutral-dark: #121212;
+  
+  /* Gradients (Overlays) */
+  --gradient-light: linear-gradient(to bottom, #F6F6F6, transparent);
+  --gradient-medium: linear-gradient(to bottom, #6C6C6C, transparent);
+  --gradient-dark: linear-gradient(to bottom, #121212, transparent);
+  
+  /* Theme Variables - Light Mode Defaults */
+  --background: var(--neutral-xlight);
+  --text: var(--neutral-dark);
+  --text-muted: var(--neutral-medium);
+  --border: var(--neutral-light);
+  --shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Interactive Elements */
+  --interactive-primary: var(--brand-medium);
+  --interactive-hover: var(--brand-dark);
+  --interactive-muted: var(--brand-light);
+  
+  /* Status Colors */
+  --status-success: var(--success-medium);
+  --status-warning: var(--warning-medium);
+  --status-error: var(--alert-medium);
+  
+  /* Section Colors */
+  --section-alt: rgba(var(--neutral-light-rgb), 0.1);
+  --overlay: rgba(var(--neutral-dark-rgb), 0.05);
+  
+  /* RGB Values for Opacity Variations */
+  --neutral-light-rgb: 188, 188, 188;
+  --neutral-dark-rgb: 18, 18, 18;
+  
+  /* Animation */
+  --transition-speed: 0.3s;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --background: var(--neutral-dark);
+  --text: var(--neutral-xlight);
+  --text-muted: var(--neutral-light);
+  --border: var(--neutral-medium);
+  --shadow: rgba(0, 0, 0, 0.3);
+  
+  /* Interactive Elements - Dark Mode */
+  --interactive-primary: var(--brand-light);
+  --interactive-hover: var(--brand-medium);
+  --interactive-muted: var(--brand-dark);
+  
+  /* Status Colors - Dark Mode */
+  --status-success: var(--success-light);
+  --status-warning: var(--warning-light);
+  --status-error: var(--alert-light);
+  
+  /* Section Colors - Dark Mode */
+  --section-alt: rgba(var(--neutral-dark-rgb), 0.3);
+  --overlay: rgba(var(--neutral-light-rgb), 0.05);
+}
+
+/* Typography scale */
+h1, .h1 {
+  font-size: var(--heading-lg);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+h2, .h2 {
+  font-size: var(--heading-md);
+  font-weight: 500;
+  line-height: 1.182;
+}
+
+h3, .h3 {
+  font-size: var(--heading-lg);
+  font-weight: 600;
+}
+
+.display-heading {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  line-height: 1.563;
+}
+
+.body-xl {
+  font-size: var(--body-xl);
+  line-height: 1.167;
+}
+
+.body-lg {
+  font-size: var(--body-lg);
+  line-height: 1.188;
+}
+
+.body-md {
+  font-size: var(--body-md);
+  line-height: 1.143;
+}
+
+.body-sm {
+  font-size: var(--body-sm);
+  line-height: 1.167;
+}
+
+/* Font weights */
+.text-regular { font-weight: 400; }
+.text-medium { font-weight: 500; }
+.text-bold { font-weight: 700; }
+
+/* OLED display typography */
+.oled-display {
+  font-family: var(--font-display);
+}
+
+.oled-lg {
+  font-size: var(--oled-lg);
+  letter-spacing: 0.25em;
+}
+
+.oled-sm {
+  font-size: var(--oled-sm);
+  letter-spacing: 0.43em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global transition effects */
+a, button, .nav-link, .btn {
+  transition: all var(--transition-speed) ease;
+}
+
+/* Section styling */
+section {
+  padding: 80px 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+/* Global Color Utility Classes */
+.bg-primary { background-color: var(--interactive-primary); }
+.bg-success { background-color: var(--status-success); }
+.bg-warning { background-color: var(--status-warning); }
+.bg-error { background-color: var(--status-error); }
+.bg-alt { background-color: var(--section-alt); }
+
+.text-primary { color: var(--interactive-primary); }
+.text-muted { color: var(--text-muted); }
+.text-success { color: var(--status-success); }
+.text-warning { color: var(--status-warning); }
+.text-error { color: var(--status-error); }
+
+/* Interactive Elements */
+a {
+  color: var(--interactive-primary);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--interactive-hover);
+}
+
+.btn {
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-primary {
+  background-color: var(--interactive-primary);
+  border-color: var(--interactive-primary);
+  color: var(--background);
+}
+
+.btn-primary:hover {
+  background-color: var(--interactive-hover);
+  border-color: var(--interactive-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--interactive-primary);
+  color: var(--interactive-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--interactive-primary);
+  color: var(--background);
+}
+
+/* Status Badges */
+.badge-success {
+  background-color: var(--status-success);
+  color: var(--background);
+}
+
+.badge-warning {
+  background-color: var(--status-warning);
+  color: var(--text);
+}
+
+.badge-error {
+  background-color: var(--status-error);
+  color: var(--background);
+}
+
+/* Cards and Sections */
+.card {
+  background-color: var(--background);
+  border-color: var(--border);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.section-divider {
+  background: var(--gradient-medium);
+  height: 1px;
+  opacity: 0.2;
+}
+
+/* Overlay Effects */
+.overlay-light {
+  background: var(--gradient-light);
+}
+
+.overlay-medium {
+  background: var(--gradient-medium);
+}
+
+.overlay-dark {
+  background: var(--gradient-dark);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Card styling */
+.card {
+  border-radius: 15px;
+  transition: transform var(--transition-speed) ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Container padding */
+.container {
+  padding: 0 1.5rem;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Hover effects */
+.hover-effect {
+  transition: transform var(--transition-speed) ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-2px);
+}
+
+/* Badge styling */
+.badge {
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+/* List styling */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section transitions */
+.section-transition {
+  transition: opacity var(--transition-speed) ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Make base font size larger for the whole site */
+html {
+  font-size: 20px;
+}
+body {
+  font-size: 1rem;
+}
+
+/* Optionally, increase font size for headings */
+h1, .display-1 { font-size: 3rem; }
+h2, .display-2 { font-size: 2.5rem; }
+h3, .display-3 { font-size: 2rem; }
+h4, .display-4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+/* Global Styles */
+:root {
+  --bg-dark: #0f0f0f;
+  --text-beige: #e1ddd6;
+  --text-white: #ffffff;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Add smooth scrolling to all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav link hover effects */
+.nav-link:hover {
+  color: var(--text-white) !important;
+}
+
+/* Contact button hover effect */
+.btn-outline-light:hover {
+  color: var(--bg-dark) !important;
+}
+
+.btn-outline-light:hover .position-absolute {
+  width: 100% !important;
+}
+
+/* Text colors */
+.text-beige {
+  color: var(--text-beige);
+}
+
+/* Animation utilities */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Add IBM Plex Mono font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+/* You can further adjust Bootstrap utility classes if needed */
+
+:root {
+  
+  
+  --transition-speed: 0.6s; /* Adjust speed for smoothness */
+}
+
+[data-theme='dark'] {
+  --background: #121212;
+  --text: #ffffff;
+  --brand-medium: #ff9800;
+}
+
+/* Apply transitions globally */
+html, body {
+  background: var(--background);
+  color: var(--text);
+  transition: background var(--transition-speed) ease,
+              color var(--transition-speed) ease;
+}
