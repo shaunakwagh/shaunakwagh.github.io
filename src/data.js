@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     name: 'Calculator GUI - JAVA',
-    tagline: 'Simple Yet Powerful Calculator',
+    tagline: 'Simple Calculator',
     description: 'A user-friendly Calculator GUI built with Java.',
     link: 'https://github.com/shaunakwagh/Calculator-GUI',
   }

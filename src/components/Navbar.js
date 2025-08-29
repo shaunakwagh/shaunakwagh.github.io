@@ -291,7 +291,7 @@ const NavigationbarRekorder = () => {
                   >
                     {/* Mobile-optimized text reveal with dynamic sizing */}
                     <div style={{ 
-                      display: "block", 
+                      
                       overflow: "visible", // Changed from hidden
                       height: "auto", // Auto height instead of fixed
                       minHeight: window.innerWidth <= 480 ? 40 : 48, // Minimum height
