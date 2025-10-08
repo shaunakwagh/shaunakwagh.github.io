@@ -4,8 +4,8 @@ export const projects = [
     date: 'Aug 2025',
     tagline: 'Python, LangChain, FAISS, HuggingFace, Google Gemini[LLM], Gradio',
     description: [
-      '- Developed an AI-powered web tool for municipal bond insurers that generates automated, source-cited due diligence PDF reports from uploaded official statements, using Google Gemini LLM, LangChain, and Gradio.',
-      '- Streamlined bond underwriting analysis by enabling instant extraction of key risks, covenants, and financial details from complex bond documents, reducing manual review time by over 80%.',
+      '- Developed an AI-powered web tool that generates automated, source-cited due diligence PDF reports from uploaded official statements, using Google Gemini LLM, LangChain, and Gradio.',
+      '- Streamlined bond underwriting analysis by enabling instant extraction of key risks, covenants, and financial details from complex documents, reducing manual review time by over 80%.',
       '- Enhanced transparency and auditability for bond insurers by including exact source page citations in all generated reports, supporting data-driven insurance decisions.',
       '- Designed a modular frontend in Gradio with intuitive upload features, result rendering, and error handling, ensuring a production-ready UX for insurance analysts.'
     ],
