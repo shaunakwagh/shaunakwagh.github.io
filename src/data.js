@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'AI Document Retrieval System (RAG) ',
     date: 'Aug 2025',
-    tagline: 'Python, LangChain, FAISS, HuggingFace, Google Gemini[LLM], Gradio, hiii',
+    tagline: 'Python, LangChain, FAISS, HuggingFace, Google Gemini[LLM], Gradio',
     description: [
       '- Developed an AI-powered web tool that generates automated, source-cited due diligence PDF reports from uploaded official statements, using Google Gemini LLM, LangChain, and Gradio.',
       '- Streamlined bond underwriting analysis by enabling instant extraction of key risks, covenants, and financial details from complex documents, reducing manual review time by over 80%.',
