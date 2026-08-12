@@ -1,5 +1,17 @@
 export const projects = [
   {
+    name: 'AI Engineer @ Highmark/enGen',
+    date: 'Nov 2025 – Present',
+    tagline: 'Google Dialogflow CX, Vertex AI Agent Builder, LangChain, Python, GCP',
+    description: [
+      '- Co-designed the architecture for an LLM-powered intent routing system on Google Dialogflow CX Playbooks, enabling intelligent recovery from No Match events by dynamically directing users to the right conversational workflow.',
+      '- Engineered a Python knowledge generation pipeline that extracts Dialogflow intents and training phrases into retrieval-optimized documents published to Google Cloud Storage for ingestion by Vertex AI Data Store, eliminating manual knowledge-base maintenance.',
+      '- Built an automated Python evaluation framework using curated golden datasets for continuous regression testing, improving intent routing accuracy by 80%.',
+      '- Served as engineer for enGen\'s first customer-facing Conversational AI product, delivering production-grade agentic workflows on Dialogflow CX and Vertex AI Agent Builder to serve 1,200+ customers seeking benefit quotes.'
+    ],
+    link: '',
+  },
+  {
     name: 'AI Document Retrieval System (RAG) ',
     date: 'Aug 2025',
     tagline: 'Python, LangChain, FAISS, HuggingFace, Google Gemini[LLM], Gradio',
